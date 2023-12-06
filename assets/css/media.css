@@ -1,0 +1,66 @@
+@media (max-width:568px) {
+    .header .heder-content h1{
+        text-align: end;
+    }
+    .header .heder-content .para{
+        font-size: 15px !important;
+    }
+    .header-icon{
+        margin-top: 0px !important;
+    }
+    .header .heder-content .header-icon i{
+        margin-right: 5px !important;
+    }
+    .about .number{
+        margin-top: -60px;
+    }
+    .about .number .col-md-6{
+        padding: 8px !important;
+        border: none !important;
+    }
+    .about .description h2{
+        width: 100% !important;
+    }
+    .about .description .port{
+        margin-left: 30px !important;
+    }
+    .resume .small{
+        width: 100% !important;
+    }
+    .resume .small img{
+        margin-top: 25px;
+    }
+    .resume .description-item .span80, .resume .description-item .span70, .resume .description-item .span55{
+        left: 175px;
+    }
+    .resume .description-item .span70{
+        left: 150px;
+    }
+    .resume .description-item .span55{
+        left: 110px;
+    }
+    .section .small{
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: left;
+        margin: 10px 0 0 -10px !important;
+    }
+    .contact p{
+        width: 90%;
+        text-align: center;
+    }
+    .contact .link-small{
+        margin-top: -35px;
+    }
+    .address{
+        display: none;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer img{
+        margin-bottom: 15px;
+    }
+
+}

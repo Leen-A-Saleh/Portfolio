@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');/*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700;800&display=swap');/*font-family: 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;600;700&display=swap');/*font-family: 'Raleway', sans-serif;*/
+:root{
+    --main-color: #ff724c;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 5000px;
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.text-main{
+    color: var(--main-color);
+}
+/* start navbar */
+.hire-link i{
+    transition: .5s;
+}
+.hire-link:hover i{
+    color: #fff !important;
+    background-color: #000 !important;
+    transform: rotate(360deg);
+}
+.navbar .nav-link{
+    position: relative;
+}
+.navbar .nav-link:hover{
+    color: #313335;
+}
+.navbar .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    height: 2px;
+    width: 0px;
+    background-color: var(--main-color);
+    transition: .5s;
+}
+.navbar .nav-link.active::after{
+    width: 50px;
+}
+.navbar .nav-link:hover::after{
+    width: 60px;
+}
+.navbar .nav-link.active:hover::after{
+    width: 50px;
+}
+/* start header */
+.header{
+    background-image: url('../img/header/introbg5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .heder-content span,.para{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 25.6px;
+    color: rgb(49,51,53);
+}
+.header .heder-content .para{
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #3333;
+    animation: typing 3s infinite alternate-reverse steps(27),blink infinite .3s;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 328px;
+    }
+}
+@keyframes blink {
+    from{
+        border-color: #333333bd;
+    }
+    to{
+        border-color: #33333300;
+    }
+    
+}
+.header .heder-content h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 60px;
+    font-weight: 700; 
+}
+.header .heder-content .header-icon i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid;
+    text-align: center;
+    transition: .5s;
+}
+.header .heder-content .header-icon i:hover{
+    color: #fff;
+    transform: rotate(360deg);
+}
+.header .heder-content .header-icon .fa-facebook-f{
+    color: #3b5999;
+    border-color: #3b5999;
+}
+.header .heder-content .header-icon .fa-facebook-f:hover{
+    background-color: #3b5999;
+}
+.header .heder-content .header-icon .fa-dribbble{
+    color: #ea4c89;
+    border-color: #ea4c89;
+}
+.header .heder-content .header-icon .fa-dribbble:hover{
+    background-color: #ea4c89;
+}
+.header .heder-content .header-icon .fa-behance{
+    color: #1769ff;
+    border-color: #1769ff;
+}
+.header .heder-content .header-icon .fa-behance:hover{
+    background-color: #1769ff;
+}
+.header .heder-content .header-icon .fa-linkedin-in{
+    color: #0077b5;
+    border-color: #0077b5;
+}
+.header .heder-content .header-icon .fa-linkedin-in:hover{
+    background-color: #0077b5;
+} 
+.header .heder-content .header-icon .fa-google-plus-g{
+    color: #dd4b39;
+    border-color: #dd4b39;
+}
+.header .heder-content .header-icon .fa-google-plus-g:hover{
+    background-color: #dd4b39;
+}
+/* start about */
+.about .number{
+    background-color: #4e4e4e;
+}
+.about .number span,p{
+    font-weight: 700;
+    color: rgb(243,243,243);
+}
+.about .number span{
+    font-size: 26px;
+}
+.about .number p{
+    font-family: 'Dosis', sans-serif;
+}
+.about .description{
+    background: #ff7a57;
+    color: rgb(243,243,243);
+}
+.about .description .head-span{
+    font-weight: 500;
+    line-height: 18px;
+    width: 48.13px;
+} 
+.about .description h2{
+    font-family: 'Dosis',sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 45px;
+}
+.about .description p{
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+}
+.about .description a {
+    margin-left: 38px;
+    padding-top: 9px!important;
+    padding-bottom: 10px!important;
+
+}
+a.port .myport{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #3b3b3b;
+}
+.port i{
+    background-color: #3B3B3B;
+    margin-left: -25px;
+    padding: 13.5px 0px;
+    font-size: 11px;
+}
+.port:hover i{
+    color: #ff7a57!important;
+}
+/* start service */
+.first-span{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(129,129,129);
+    width: 22%;
+    position: relative;
+}
+.first-span::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    height: 1px;
+    width: 58px;
+    background-color: var(--main-color);
+}
+.head2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(59,59,59);
+}
+.service h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(59,59,59);
+}
+.service p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(129,129,129);
+    width: 85%;
+    margin-left: 25px;
+}
+.service .service-item{
+    position: relative;
+}
+.service .service-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    z-index: -1;
+    height: 0px;
+    transition: .75s;
+}
+.service .service-item:hover::after{
+    height: 100%;
+}
+/* start portfolio */
+.portfolio{
+    background-color: #f3f3f3;
+    padding-bottom: 60px;
+}
+.portfolio .first-span{
+    width: 38%;
+}
+.portfolio .first-span::after{
+    width: 77px;
+}
+.portfolio .nav-item .nav-link{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: transparent;
+    color: #5f5f5f;
+    border-color: #5f5f5f;
+}
+.portfolio .nav-link.active{
+    background-color: var(--main-color);
+    color: #fff;
+    border: transparent;
+}
+.portfolio .portfolio-cards-info .portfolio-info h3{
+    color: rgb(59,59,59);
+}
+.portfolio .portfolio-cards-info .portfolio-info p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(76,76,76);
+    margin-top: -10px;
+}
+.portfolio .portfolio-cards .overlay{
+    background-color: rgba(59,59,59,.25);
+    transform: scaleY(0);
+    transition: .5s;
+}
+.portfolio .portfolio-cards:hover .overlay{
+    transform: scaleY(1);
+}
+.portfolio .portfolio-cards i:nth-child(1){
+    transform: scaleY(0);
+    transition: .5s;
+}
+.portfolio .portfolio-cards:hover i:nth-child(1){
+    transform: scaleY(1) rotate(-360deg);
+}
+.portfolio .overlay a:hover i{
+    background-color: transparent;
+    color: var(--main-color) !important;
+    border: 1px solid #fff;
+}
+.portfolio .portfolio-cards-info{
+    bottom: 30px;
+    transition: .5s;
+    opacity: 0;
+}
+.portfolio .portfolio-cards:hover .portfolio-cards-info{
+    bottom: 0;
+    opacity: 1;
+}
+/* start resume */
+.resume .first-span{
+    width: 25.5%;
+}
+.resume .eduation h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(59,59,59);
+}
+.resume .eduation i{
+    padding: 12px;
+}
+.resume .eduation{
+    position: relative;
+    transition: .5s;
+}
+.description .first-description{
+    position: relative;
+}
+.resume .eduation::before, .resume .description .first-description::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    top: 25px;
+    left: 21.5px;
+    z-index: -1;
+}
+.resume .description .first-description.last-description::before{
+    height: 0;
+}
+.resume .description .first-description::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background-color: #fff;
+}
+.resume .eduation:hover i{
+    background-color: #f3f3f3;
+    color: var(--main-color) !important;
+}
+.resume .description .first-description:hover::after{
+    background-color: var(--main-color);
+}
+.resume .description .first-description h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(59,59,59);
+    margin-top: -18px;
+}
+.resume .description .first-description h4 span{
+    font-family: 'Dosis',sans-serif;
+
+}
+.description .first-description .span-text{
+    font-size: 14px;
+}
+.resume p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(59,59,59);
+}
+.description .first-description i{
+    font-size: 10px;
+    padding-left: 17px;
+    padding-top: 25px;
+}
+.resume .skill.eduation{
+    position: relative;
+}
+.resume .skill.eduation i{
+    position: absolute;
+    left: 0px;
+}
+.resume .skill.eduation h3{
+    position: absolute;
+    left: 55px;
+    top: 0px;
+}
+.resume .progress{
+    background-color: #3b3b3b;
+    height: 6px;
+    margin-left: 50px;
+}
+.resume .description-item{
+    position: relative;
+}
+.resume .description-item .span80, .resume .description-item .span70, .resume .description-item .span55{
+    position: absolute;
+    left: 340px;
+}
+.resume .description-item .span70{
+    left: 295px;
+}
+.resume .description-item .span55{
+    left: 215px;
+}
+.resume .description .first-description .description-item::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 120%;
+    background-color: #000;
+    top: 25px;
+    left: 21.5px;
+    z-index: -1;
+}
+.resume .description .first-description.last-description .description-item::before{
+    height: 0%;
+}
+.section{
+    background-image: url(../img/resume/brandbg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+} 
+.section .overlay{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(59,59,59,.75);
+}
+.section .overlay h2{
+    font-family: 'Dosis',sans-serif;
+    font-size: 32px;
+    font-family: 500;
+    color: rgb(243,243,243);
+    margin-bottom: 25px;
+}
+.section .overlay a{
+    font-family: 'Ralewat',sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+.section .overlay a:hover{
+    background-color: var(--main-color);
+    border: none !important;
+}
+.section2 .first-span{
+    width: 38%;
+}
+.section2 .first-span::after{
+    width: 30%;
+}
+.section2 h3{
+    font-size: 15px;
+    font-weight: 700;
+    color: #313131;
+}
+.section2 p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #5b5b5b;
+}
+.section2 .div{
+    width: 90%;
+    padding: 30px 5px;
+    font-style: italic;
+    font-size: 14px;
+}
+.section2 i{
+    margin-right: -20px;
+    font-size: 22px;
+}
+.section2 .div:hover{
+    background-color: rgba(91,91,91,.9);
+    color: #fff;
+}
+.section2 .div:hover p{
+    color: #fff;
+}
+.section2 ul li i{
+    font-size: 16px;
+}
+/* star contact */
+.contact{
+    background-image: url('../img/contact/contactbg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+}
+.contact .overlay{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 114, 76, .85);
+}
+.contact .first-span::after{
+    background-color: #f3f3f3;
+}
+.contact h2{
+    color: #f3f3f3;
+}
+.contact .first-span{
+    color: #f3f3f3;
+}
+.contact p{
+    width: 49%;
+    line-height: 30px;
+    color: #f3f3f3;
+    font-size: 15px;
+    font-weight: 400;
+}
+.form-control {
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #f3f3f3;
+    color: #f3f3f3;
+}
+.form-control:focus{
+    background-color: transparent;
+    box-shadow: none;
+    border-color:var(--mainColor) ;
+    color: #f3f3f3;
+} 
+.form-control::placeholder{
+    color: #f3f3ff !important;
+}
+.map iframe{
+    width: 100%;
+    height: 500px;
+}
+.map .item i{
+    background-color: #f3f3f3;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    transition: .5s;
+}
+.map .item p{
+    font-weight: 500;
+}
+.map .item i:hover{
+    color: #fff;
+    background-color: var(--main-color);
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.address{
+    background-color: #282828;
+    bottom: 8px;
+    left: 150px;
+}
+.footer p{
+    font-family: 'Raleyway',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(129,129,129);
+}
